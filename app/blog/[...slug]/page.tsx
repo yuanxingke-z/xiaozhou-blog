@@ -13,8 +13,7 @@ import PostBanner from '@/layouts/PostBanner'
 import { Metadata } from 'next'
 import siteMetadata from '@/data/siteMetadata'
 import { notFound } from 'next/navigation'
-import WalineComments from '@/components/WalineComments'  // ← 新增这行
-
+import WalineComments from '@/components/WalineComments'
 
 const defaultLayout = 'PostLayout'
 const layouts = {

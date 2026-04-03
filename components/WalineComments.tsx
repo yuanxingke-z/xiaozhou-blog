@@ -12,7 +12,7 @@ export default function WalineComments({ path }: { path: string }) {
 
     init({
       el: containerRef.current,
-      serverURL: 'https://your-waline-project.vercel.app',
+      serverURL: 'https://waline-delta-roan-64.vercel.app',
       path: path,
       lang: 'zh-CN',
       locale: {

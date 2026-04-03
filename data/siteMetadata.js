@@ -59,7 +59,7 @@ const siteMetadata = {
     // content security policy in the `next.config.js` file.
     // Select a provider and use the environment variables associated to it
     // https://vercel.com/docs/environment-variables
-    provider: 'giscus', // supported providers: giscus, utterances, disqus
+    provider: 'waline', // supported providers: giscus, utterances, disqus
     giscusConfig: {
       // Visit the link below, and follow the steps in the 'configuration' section
       // https://giscus.app/
@@ -83,6 +83,15 @@ const siteMetadata = {
       // This corresponds to the `data-lang="en"` in giscus's configurations
       lang: 'en',
     },
+    walineConfig: {
+      serverURL: 'https://waline-delta-roan-64.vercel.app',  // 你的服务端地址
+      lang: 'zh-CN',
+      locale: {
+        placeholder: '欢迎评论，无需登录~',
+      },
+      reaction: true,  // 开启表情反应
+      pageview: true,  // 开启浏览量统计
+  },
   },
   search: {
     provider: 'kbar', // kbar or algolia
